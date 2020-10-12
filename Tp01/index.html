@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--image incon du site 100% Bootstrap-->
+    <link rel="title icon" type="image/png" href="images/title-img.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome fas-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Site 100% Bootstrap 4 [SPA]</title>
+    <style>
+        nav li:hover{
+          background-color: rgb(255, 91, 73);
+          border-radius: 5px;
+          box-shadow: 2px 4px 8px black;
+        }
+      </style>
+
+</head>
+
+<body class="bg-light" style="overflow-x: hidden;">
+
+
+    <div class="row vw-100">
+        <div class="col-2 bg-dark px-auto">
+            <nav class="nav flex-column vh-100 position-fixed" style="max-width: inherit;">
+                <div class="mx-4 mh-100 px-auto">
+                    <p class="text-light pt-1 text-center" style="font-size: x-large;">TP-01 inc.</p>
+                    <hr class="bg-light">
+                    <div class="row mx-auto">
+                        <img class="rounded" src="images/avatar.png" alt="avatar" style="width: 40px; height: 40px;">
+                        <p class="pl-2 pt-2 text-light">Pascal Bourgoin</p>
+                    </div>
+                    <hr class="bg-light">
+                    <ul class="nav flex-colum">
+                        <li class="nav-item pl-2 w-100" style=" height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-home fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Tableau de bord</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style="height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-user fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Profile</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style=" height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-wrench fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Configuration</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style="height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-envelope fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Inbox</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style="height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-table fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Tableaux</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style="height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-shopping-cart fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Ventes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style="height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-chart-line fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Statistiques</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style="height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-chart-bar fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Graphes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2 my-2 w-100" style="height: 3em;" role="button">
+                            <div class="row mx-auto text-light">
+                                <i class="fas fa-file-alt fa-2x align-self-center"></i>
+                                <a class="nav-link active text-light disabled" href="#">Documentation</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End Section navbar-->
+        <div class="col-10">
+            <!-- Start Section Data-->
+            <section class="mb-2 my-4">
+                <div class="row justify-content-between">
+                    <div class="card col-lg-3 col-sm-10 mb-3 mx-auto">
+                        <div>
+                            <div class="float-left my-4">
+                                <i class="fas fa-shopping-cart fa-6x text-warning"></i>
+                            </div>
+                            <div class="card-body text-right">
+
+                                <div class="card-title">
+                                    <h2 class="text-muted">Ventes</h2>
+                                </div>
+                                <div class="card-text display-4 text-muted mb-3">150,000$</div>
+                            </div>
+                            <div class="card-footer text-left">
+                                <h4><i class="pr-3 fas fa-sync-alt"></i>Updated Now</h4>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div class="card col-lg-3 col-sm-10 mb-3 mx-auto">
+                        <div>
+                            <div class="float-left my-4">
+                                <i class="fas fa-money-bill-alt fa-6x text-success"></i>
+                            </div>
+                            <div class="card-body text-right">
+
+                                <div class="card-title">
+                                    <h2 class="text-muted">Ventes</h2>
+                                </div>
+                                <div class="card-text display-4 text-muted mb-3">48,000$</div>
+                            </div>
+                            <div class="card-footer text-left">
+                                <h4><i class="pr-3 fas fa-sync-alt"></i>Updated Now</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card col-lg-3 col-sm-10 mb-3 mx-auto">
+                        <div>
+                            <div class="float-left my-4">
+                                <i class="fas fa-users fa-6x text-info"></i>
+                            </div>
+                            <div class="card-body text-right">
+
+                                <div class="card-title">
+                                    <h2 class="text-muted">Ventes</h2>
+                                </div>
+                                <div class="card-text display-4 text-muted mb-3">120,000</div>
+                            </div>
+                            <div class="card-footer text-left">
+                                <h4><i class="pr-3 fas fa-sync-alt"></i>Updated Now</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-sm-10 mb-3 mx-auto">
+                        <div>
+                            <div class="float-left my-4">
+                                <i class="fas fa-chart-line fa-6x text-danger"></i>
+                            </div>
+                            <div class="card-body text-right">
+
+                                <div class="card-title">
+                                    <h2 class="text-muted">Ventes</h2>
+                                </div>
+                                <div class="card-text display-4 text-muted mb-3">73,000</div>
+                            </div>
+                            <div class="card-footer text-left">
+                                <h4><i class="pr-3 fas fa-sync-alt"></i>Updated Now</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Section Data-->
+
+
+            <!-- Start Section Staff Salary & Recent Payments-->
+
+            <section class="container-fluid my-4">
+                <div class="row">
+                    <!-- Start Staff Salary-->
+                    <div class="col-lg-6">
+                        <div class="text-center mb-3">
+                            <h1 class="text-secondary display-4 mb-3">Staff Salary</h1>
+                            <table class="table table-striped">
+                                <thead class="text-muted">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Salaire</th>
+                                        <th scope="col">Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Pascal</td>
+                                        <td>5300$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-info text-light">Message</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Louis</td>
+                                        <td>5300$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-info text-light">Message</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Coralie</td>
+                                        <td>5300$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-info text-light">Message</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Naya</td>
+                                        <td>5300$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-info text-light">Message</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Léa</td>
+                                        <td>5300$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-info text-light">Message</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row justify-content-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Staff Salary-->
+                    
+                    <!-- Start Recent Payments-->
+                    <div class="col-lg-6">
+                        <div class="text-center mb-3">
+                            <h1 class="text-muted display-4 mb-3">Recent Payments</h1>
+                            <table class="table table-dark">
+                                <thead class="text-muted">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Prix</th>
+                                        <th scope="col">État</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Léa</td>
+                                        <td>1645$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-success text-light">Approuvé</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Coralie</td>
+                                        <td>1645$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-success text-light">Approuvé</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Louis</td>
+                                        <td>1645$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-danger text-light">EnAttente</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Jane</td>
+                                        <td>2000$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-danger text-light">EnAttente</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Naya</td>
+                                        <td>1645$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-success text-light">Approuvé</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Pascal</td>
+                                        <td>1645$</td>
+                                        <td>25/09/2020</td>
+                                        <td><button class="btn bg-danger text-light">EnAttente</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row justify-content-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <span class="page-link">Previous</span>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Recent Payments-->
+                </div>
+            </section>
+
+            <!-- End Section Staff Salary & Recent Payments-->
+
+
+            <!-- Start Section Progress Bar & Task-->
+            <section class="container-fluid mt-4 mb-4">
+                <div class="row mr-2 ">
+                    <div class="col-lg-6 text-left bg-dark py-4 h-75 ">
+                        <h1 class="my-4 pb-4 text-light">Sondage Langage de programmation</h1>
+
+                        <div class="text-light text-uppercase h4 pt-4">Java-J2EE</div>
+                        <div class="progress mb-4 mt-2">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                        <div class="text-light text-uppercase h4">Angular 10</div>
+                        <div class="progress mb-4 mt-2">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                                style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                        <div class="text-light text-uppercase h4">React</div>
+                        <div class="progress mb-4 mt-2">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                        <div class="text-light text-uppercase h4">Php</div>
+                        <div class="progress mb-4 mt-2">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 13%"
+                                aria-valuenow="13" aria-valuemin="0" aria-valuemax="100">13%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="checkbox row bg-white py-3 mb-4 border-left border-warning ml-1">
+                            <input type="checkbox" checked class="m-4">
+                            <div class="text-muted h5 my-auto mr-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Reiciendis, velit.</div>
+
+                            <button class="float-right btn"><i class="fas fa-edit text-success fa-2x"></i></button>
+                            <button class="float-right btn"><i class="fas fa-trash-alt text-danger fa-2x"></i></button>
+
+                        </div>
+
+                        <div class="checkbox row bg-white py-3 my-4 border-left border-warning ml-1">
+                            <input type="checkbox" checked class="m-4">
+                            <div class="text-muted h5 my-auto mr-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Reiciendis, velit.</div>
+
+                            <button class="float-right btn"><i class="fas fa-edit text-success fa-2x"></i></button>
+                            <button class="float-right btn"><i class="fas fa-trash-alt text-danger fa-2x"></i></button>
+
+                        </div>
+
+                        <div class="checkbox row bg-white py-3 my-4 border-left border-warning ml-1">
+                            <input type="checkbox" checked class="m-4">
+                            <div class="text-muted h5 my-auto mr-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Reiciendis, velit.</div>
+
+                            <button class="float-right btn"><i class="fas fa-edit text-success fa-2x"></i></button>
+                            <button class="float-right btn"><i class="fas fa-trash-alt text-danger fa-2x"></i></button>
+
+                        </div>
+
+                        <div class="checkbox row bg-white py-3 my-4 border-left border-warning ml-1">
+                            <input type="checkbox" checked class="m-4">
+                            <div class="text-muted h5 my-auto mr-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Reiciendis, velit.</div>
+
+                            <button class="float-right btn"><i class="fas fa-edit text-success fa-2x"></i></button>
+                            <button class="float-right btn"><i class="fas fa-trash-alt text-danger fa-2x"></i></button>
+
+                        </div>
+
+                        <div class="checkbox row bg-white py-3 my-4 border-left border-warning ml-1">
+                            <input type="checkbox" checked class="m-4">
+                            <div class="text-muted h5 my-auto mr-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Reiciendis, velit.</div>
+
+                            <button class="float-right btn"><i class="fas fa-edit text-success fa-2x"></i></button>
+                            <button class="float-right btn"> <i class="fas fa-trash-alt text-danger fa-2x"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- End Section Progress Bar & Task-->
+
+
+
+
+            <!-- Start Section Footer-->
+            <section class="">
+                <div class="container-fluid bg-light text-secondary pb-3">
+                    <div class="row text-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="row">
+                                <p class="col-lg-5 text-right">TP01-420-345-AL</p>
+                                <a class="col-lg-1 text-muted" href="#">About</a>
+                                <a class="col-lg-1 text-muted" href="#">Support</a>
+                                <a class="col-lg-1 text-muted" href="#">Blog</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center row ">
+                            <p class="pr-1">&copy; 2020 Copyright. Made With <i class="fas fa-heart text-danger"></i> By
+                            </p>
+                            <span class="text-success font-weight-bold">Pascal</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End Section Footer-->
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
